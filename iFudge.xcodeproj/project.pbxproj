@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9674A772166E73AA00CCA840 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674A771166E73AA00CCA840 /* UIKit.framework */; };
+		9674A774166E73AA00CCA840 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674A773166E73AA00CCA840 /* Foundation.framework */; };
+		9674A776166E73AA00CCA840 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674A775166E73AA00CCA840 /* CoreGraphics.framework */; };
+		9674A77C166E73AA00CCA840 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9674A77A166E73AA00CCA840 /* InfoPlist.strings */; };
+		9674A77E166E73AA00CCA840 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9674A77D166E73AA00CCA840 /* main.m */; };
+		9674A782166E73AA00CCA840 /* iFudgeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9674A781166E73AA00CCA840 /* iFudgeAppDelegate.m */; };
+		9674A784166E73AA00CCA840 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9674A783166E73AA00CCA840 /* Default.png */; };
+		9674A786166E73AA00CCA840 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9674A785166E73AA00CCA840 /* Default@2x.png */; };
+		9674A788166E73AA00CCA840 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9674A787166E73AA00CCA840 /* Default-568h@2x.png */; };
+		9674A78B166E73AA00CCA840 /* iFudgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9674A78A166E73AA00CCA840 /* iFudgeViewController.m */; };
+		9674A78E166E73AA00CCA840 /* iFudgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9674A78C166E73AA00CCA840 /* iFudgeViewController.xib */; };
+		9674A796166E73AA00CCA840 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674A795166E73AA00CCA840 /* SenTestingKit.framework */; };
+		9674A797166E73AA00CCA840 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674A771166E73AA00CCA840 /* UIKit.framework */; };
+		9674A798166E73AA00CCA840 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674A773166E73AA00CCA840 /* Foundation.framework */; };
+		9674A7A0166E73AA00CCA840 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9674A79E166E73AA00CCA840 /* InfoPlist.strings */; };
+		9674A7A3166E73AA00CCA840 /* iFudgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9674A7A2166E73AA00CCA840 /* iFudgeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9674A799166E73AA00CCA840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9674A764166E73AA00CCA840 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9674A76C166E73AA00CCA840;
+			remoteInfo = iFudge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9674A76D166E73AA00CCA840 /* iFudge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFudge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9674A771166E73AA00CCA840 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9674A773166E73AA00CCA840 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9674A775166E73AA00CCA840 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9674A779166E73AA00CCA840 /* iFudge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iFudge-Info.plist"; sourceTree = "<group>"; };
+		9674A77B166E73AA00CCA840 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9674A77D166E73AA00CCA840 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9674A77F166E73AA00CCA840 /* iFudge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iFudge-Prefix.pch"; sourceTree = "<group>"; };
+		9674A780166E73AA00CCA840 /* iFudgeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iFudgeAppDelegate.h; sourceTree = "<group>"; };
+		9674A781166E73AA00CCA840 /* iFudgeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFudgeAppDelegate.m; sourceTree = "<group>"; };
+		9674A783166E73AA00CCA840 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9674A785166E73AA00CCA840 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9674A787166E73AA00CCA840 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9674A789166E73AA00CCA840 /* iFudgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iFudgeViewController.h; sourceTree = "<group>"; };
+		9674A78A166E73AA00CCA840 /* iFudgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFudgeViewController.m; sourceTree = "<group>"; };
+		9674A78D166E73AA00CCA840 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/iFudgeViewController.xib; sourceTree = "<group>"; };
+		9674A794166E73AA00CCA840 /* iFudgeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFudgeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9674A795166E73AA00CCA840 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9674A79D166E73AA00CCA840 /* iFudgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iFudgeTests-Info.plist"; sourceTree = "<group>"; };
+		9674A79F166E73AA00CCA840 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9674A7A1166E73AA00CCA840 /* iFudgeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iFudgeTests.h; sourceTree = "<group>"; };
+		9674A7A2166E73AA00CCA840 /* iFudgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFudgeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9674A76A166E73AA00CCA840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9674A772166E73AA00CCA840 /* UIKit.framework in Frameworks */,
+				9674A774166E73AA00CCA840 /* Foundation.framework in Frameworks */,
+				9674A776166E73AA00CCA840 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9674A790166E73AA00CCA840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9674A796166E73AA00CCA840 /* SenTestingKit.framework in Frameworks */,
+				9674A797166E73AA00CCA840 /* UIKit.framework in Frameworks */,
+				9674A798166E73AA00CCA840 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9674A762166E73AA00CCA840 = {
+			isa = PBXGroup;
+			children = (
+				9674A777166E73AA00CCA840 /* iFudge */,
+				9674A79B166E73AA00CCA840 /* iFudgeTests */,
+				9674A770166E73AA00CCA840 /* Frameworks */,
+				9674A76E166E73AA00CCA840 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9674A76E166E73AA00CCA840 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9674A76D166E73AA00CCA840 /* iFudge.app */,
+				9674A794166E73AA00CCA840 /* iFudgeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9674A770166E73AA00CCA840 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9674A771166E73AA00CCA840 /* UIKit.framework */,
+				9674A773166E73AA00CCA840 /* Foundation.framework */,
+				9674A775166E73AA00CCA840 /* CoreGraphics.framework */,
+				9674A795166E73AA00CCA840 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9674A777166E73AA00CCA840 /* iFudge */ = {
+			isa = PBXGroup;
+			children = (
+				9674A780166E73AA00CCA840 /* iFudgeAppDelegate.h */,
+				9674A781166E73AA00CCA840 /* iFudgeAppDelegate.m */,
+				9674A789166E73AA00CCA840 /* iFudgeViewController.h */,
+				9674A78A166E73AA00CCA840 /* iFudgeViewController.m */,
+				9674A78C166E73AA00CCA840 /* iFudgeViewController.xib */,
+				9674A778166E73AA00CCA840 /* Supporting Files */,
+			);
+			path = iFudge;
+			sourceTree = "<group>";
+		};
+		9674A778166E73AA00CCA840 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9674A779166E73AA00CCA840 /* iFudge-Info.plist */,
+				9674A77A166E73AA00CCA840 /* InfoPlist.strings */,
+				9674A77D166E73AA00CCA840 /* main.m */,
+				9674A77F166E73AA00CCA840 /* iFudge-Prefix.pch */,
+				9674A783166E73AA00CCA840 /* Default.png */,
+				9674A785166E73AA00CCA840 /* Default@2x.png */,
+				9674A787166E73AA00CCA840 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9674A79B166E73AA00CCA840 /* iFudgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9674A7A1166E73AA00CCA840 /* iFudgeTests.h */,
+				9674A7A2166E73AA00CCA840 /* iFudgeTests.m */,
+				9674A79C166E73AA00CCA840 /* Supporting Files */,
+			);
+			path = iFudgeTests;
+			sourceTree = "<group>";
+		};
+		9674A79C166E73AA00CCA840 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9674A79D166E73AA00CCA840 /* iFudgeTests-Info.plist */,
+				9674A79E166E73AA00CCA840 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9674A76C166E73AA00CCA840 /* iFudge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9674A7A6166E73AA00CCA840 /* Build configuration list for PBXNativeTarget "iFudge" */;
+			buildPhases = (
+				9674A769166E73AA00CCA840 /* Sources */,
+				9674A76A166E73AA00CCA840 /* Frameworks */,
+				9674A76B166E73AA00CCA840 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iFudge;
+			productName = iFudge;
+			productReference = 9674A76D166E73AA00CCA840 /* iFudge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9674A793166E73AA00CCA840 /* iFudgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9674A7A9166E73AA00CCA840 /* Build configuration list for PBXNativeTarget "iFudgeTests" */;
+			buildPhases = (
+				9674A78F166E73AA00CCA840 /* Sources */,
+				9674A790166E73AA00CCA840 /* Frameworks */,
+				9674A791166E73AA00CCA840 /* Resources */,
+				9674A792166E73AA00CCA840 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9674A79A166E73AA00CCA840 /* PBXTargetDependency */,
+			);
+			name = iFudgeTests;
+			productName = iFudgeTests;
+			productReference = 9674A794166E73AA00CCA840 /* iFudgeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9674A764166E73AA00CCA840 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = iFudge;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "James Smith";
+			};
+			buildConfigurationList = 9674A767166E73AA00CCA840 /* Build configuration list for PBXProject "iFudge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9674A762166E73AA00CCA840;
+			productRefGroup = 9674A76E166E73AA00CCA840 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9674A76C166E73AA00CCA840 /* iFudge */,
+				9674A793166E73AA00CCA840 /* iFudgeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9674A76B166E73AA00CCA840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9674A77C166E73AA00CCA840 /* InfoPlist.strings in Resources */,
+				9674A784166E73AA00CCA840 /* Default.png in Resources */,
+				9674A786166E73AA00CCA840 /* Default@2x.png in Resources */,
+				9674A788166E73AA00CCA840 /* Default-568h@2x.png in Resources */,
+				9674A78E166E73AA00CCA840 /* iFudgeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9674A791166E73AA00CCA840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9674A7A0166E73AA00CCA840 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9674A792166E73AA00CCA840 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9674A769166E73AA00CCA840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9674A77E166E73AA00CCA840 /* main.m in Sources */,
+				9674A782166E73AA00CCA840 /* iFudgeAppDelegate.m in Sources */,
+				9674A78B166E73AA00CCA840 /* iFudgeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9674A78F166E73AA00CCA840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9674A7A3166E73AA00CCA840 /* iFudgeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9674A79A166E73AA00CCA840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9674A76C166E73AA00CCA840 /* iFudge */;
+			targetProxy = 9674A799166E73AA00CCA840 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9674A77A166E73AA00CCA840 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9674A77B166E73AA00CCA840 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9674A78C166E73AA00CCA840 /* iFudgeViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9674A78D166E73AA00CCA840 /* en */,
+			);
+			name = iFudgeViewController.xib;
+			sourceTree = "<group>";
+		};
+		9674A79E166E73AA00CCA840 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9674A79F166E73AA00CCA840 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9674A7A4166E73AA00CCA840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9674A7A5166E73AA00CCA840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9674A7A7166E73AA00CCA840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iFudge/iFudge-Prefix.pch";
+				INFOPLIST_FILE = "iFudge/iFudge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9674A7A8166E73AA00CCA840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iFudge/iFudge-Prefix.pch";
+				INFOPLIST_FILE = "iFudge/iFudge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9674A7AA166E73AA00CCA840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iFudge.app/iFudge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iFudge/iFudge-Prefix.pch";
+				INFOPLIST_FILE = "iFudgeTests/iFudgeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9674A7AB166E73AA00CCA840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iFudge.app/iFudge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iFudge/iFudge-Prefix.pch";
+				INFOPLIST_FILE = "iFudgeTests/iFudgeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9674A767166E73AA00CCA840 /* Build configuration list for PBXProject "iFudge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9674A7A4166E73AA00CCA840 /* Debug */,
+				9674A7A5166E73AA00CCA840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9674A7A6166E73AA00CCA840 /* Build configuration list for PBXNativeTarget "iFudge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9674A7A7166E73AA00CCA840 /* Debug */,
+				9674A7A8166E73AA00CCA840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9674A7A9166E73AA00CCA840 /* Build configuration list for PBXNativeTarget "iFudgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9674A7AA166E73AA00CCA840 /* Debug */,
+				9674A7AB166E73AA00CCA840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9674A764166E73AA00CCA840 /* Project object */;
+}
