@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface iFudgeViewController : UIViewController
+@interface iFudgeViewController : UIViewController {
 
+    // NSMutableArray *diceRolls;
+    
+    IBOutlet UILabel *rollResult;
+}
+- (IBAction)showDiceRoll:(id)sender;
 @end

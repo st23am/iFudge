@@ -1,463 +1,1063 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		9674A772166E73AA00CCA840 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674A771166E73AA00CCA840 /* UIKit.framework */; };
-		9674A774166E73AA00CCA840 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674A773166E73AA00CCA840 /* Foundation.framework */; };
-		9674A776166E73AA00CCA840 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674A775166E73AA00CCA840 /* CoreGraphics.framework */; };
-		9674A77C166E73AA00CCA840 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9674A77A166E73AA00CCA840 /* InfoPlist.strings */; };
-		9674A77E166E73AA00CCA840 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9674A77D166E73AA00CCA840 /* main.m */; };
-		9674A782166E73AA00CCA840 /* iFudgeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9674A781166E73AA00CCA840 /* iFudgeAppDelegate.m */; };
-		9674A784166E73AA00CCA840 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9674A783166E73AA00CCA840 /* Default.png */; };
-		9674A786166E73AA00CCA840 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9674A785166E73AA00CCA840 /* Default@2x.png */; };
-		9674A788166E73AA00CCA840 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9674A787166E73AA00CCA840 /* Default-568h@2x.png */; };
-		9674A78B166E73AA00CCA840 /* iFudgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9674A78A166E73AA00CCA840 /* iFudgeViewController.m */; };
-		9674A78E166E73AA00CCA840 /* iFudgeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9674A78C166E73AA00CCA840 /* iFudgeViewController.xib */; };
-		9674A796166E73AA00CCA840 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674A795166E73AA00CCA840 /* SenTestingKit.framework */; };
-		9674A797166E73AA00CCA840 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674A771166E73AA00CCA840 /* UIKit.framework */; };
-		9674A798166E73AA00CCA840 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9674A773166E73AA00CCA840 /* Foundation.framework */; };
-		9674A7A0166E73AA00CCA840 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9674A79E166E73AA00CCA840 /* InfoPlist.strings */; };
-		9674A7A3166E73AA00CCA840 /* iFudgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9674A7A2166E73AA00CCA840 /* iFudgeTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9674A799166E73AA00CCA840 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9674A764166E73AA00CCA840 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9674A76C166E73AA00CCA840;
-			remoteInfo = iFudge;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		9674A76D166E73AA00CCA840 /* iFudge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFudge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9674A771166E73AA00CCA840 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9674A773166E73AA00CCA840 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9674A775166E73AA00CCA840 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9674A779166E73AA00CCA840 /* iFudge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iFudge-Info.plist"; sourceTree = "<group>"; };
-		9674A77B166E73AA00CCA840 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9674A77D166E73AA00CCA840 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9674A77F166E73AA00CCA840 /* iFudge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iFudge-Prefix.pch"; sourceTree = "<group>"; };
-		9674A780166E73AA00CCA840 /* iFudgeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iFudgeAppDelegate.h; sourceTree = "<group>"; };
-		9674A781166E73AA00CCA840 /* iFudgeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFudgeAppDelegate.m; sourceTree = "<group>"; };
-		9674A783166E73AA00CCA840 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		9674A785166E73AA00CCA840 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		9674A787166E73AA00CCA840 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9674A789166E73AA00CCA840 /* iFudgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iFudgeViewController.h; sourceTree = "<group>"; };
-		9674A78A166E73AA00CCA840 /* iFudgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFudgeViewController.m; sourceTree = "<group>"; };
-		9674A78D166E73AA00CCA840 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/iFudgeViewController.xib; sourceTree = "<group>"; };
-		9674A794166E73AA00CCA840 /* iFudgeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFudgeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9674A795166E73AA00CCA840 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9674A79D166E73AA00CCA840 /* iFudgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iFudgeTests-Info.plist"; sourceTree = "<group>"; };
-		9674A79F166E73AA00CCA840 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9674A7A1166E73AA00CCA840 /* iFudgeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iFudgeTests.h; sourceTree = "<group>"; };
-		9674A7A2166E73AA00CCA840 /* iFudgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iFudgeTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		9674A76A166E73AA00CCA840 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9674A772166E73AA00CCA840 /* UIKit.framework in Frameworks */,
-				9674A774166E73AA00CCA840 /* Foundation.framework in Frameworks */,
-				9674A776166E73AA00CCA840 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9674A790166E73AA00CCA840 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9674A796166E73AA00CCA840 /* SenTestingKit.framework in Frameworks */,
-				9674A797166E73AA00CCA840 /* UIKit.framework in Frameworks */,
-				9674A798166E73AA00CCA840 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		9674A762166E73AA00CCA840 = {
-			isa = PBXGroup;
-			children = (
-				9674A777166E73AA00CCA840 /* iFudge */,
-				9674A79B166E73AA00CCA840 /* iFudgeTests */,
-				9674A770166E73AA00CCA840 /* Frameworks */,
-				9674A76E166E73AA00CCA840 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		9674A76E166E73AA00CCA840 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9674A76D166E73AA00CCA840 /* iFudge.app */,
-				9674A794166E73AA00CCA840 /* iFudgeTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9674A770166E73AA00CCA840 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9674A771166E73AA00CCA840 /* UIKit.framework */,
-				9674A773166E73AA00CCA840 /* Foundation.framework */,
-				9674A775166E73AA00CCA840 /* CoreGraphics.framework */,
-				9674A795166E73AA00CCA840 /* SenTestingKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9674A777166E73AA00CCA840 /* iFudge */ = {
-			isa = PBXGroup;
-			children = (
-				9674A780166E73AA00CCA840 /* iFudgeAppDelegate.h */,
-				9674A781166E73AA00CCA840 /* iFudgeAppDelegate.m */,
-				9674A789166E73AA00CCA840 /* iFudgeViewController.h */,
-				9674A78A166E73AA00CCA840 /* iFudgeViewController.m */,
-				9674A78C166E73AA00CCA840 /* iFudgeViewController.xib */,
-				9674A778166E73AA00CCA840 /* Supporting Files */,
-			);
-			path = iFudge;
-			sourceTree = "<group>";
-		};
-		9674A778166E73AA00CCA840 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9674A779166E73AA00CCA840 /* iFudge-Info.plist */,
-				9674A77A166E73AA00CCA840 /* InfoPlist.strings */,
-				9674A77D166E73AA00CCA840 /* main.m */,
-				9674A77F166E73AA00CCA840 /* iFudge-Prefix.pch */,
-				9674A783166E73AA00CCA840 /* Default.png */,
-				9674A785166E73AA00CCA840 /* Default@2x.png */,
-				9674A787166E73AA00CCA840 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9674A79B166E73AA00CCA840 /* iFudgeTests */ = {
-			isa = PBXGroup;
-			children = (
-				9674A7A1166E73AA00CCA840 /* iFudgeTests.h */,
-				9674A7A2166E73AA00CCA840 /* iFudgeTests.m */,
-				9674A79C166E73AA00CCA840 /* Supporting Files */,
-			);
-			path = iFudgeTests;
-			sourceTree = "<group>";
-		};
-		9674A79C166E73AA00CCA840 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9674A79D166E73AA00CCA840 /* iFudgeTests-Info.plist */,
-				9674A79E166E73AA00CCA840 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		9674A76C166E73AA00CCA840 /* iFudge */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9674A7A6166E73AA00CCA840 /* Build configuration list for PBXNativeTarget "iFudge" */;
-			buildPhases = (
-				9674A769166E73AA00CCA840 /* Sources */,
-				9674A76A166E73AA00CCA840 /* Frameworks */,
-				9674A76B166E73AA00CCA840 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = iFudge;
-			productName = iFudge;
-			productReference = 9674A76D166E73AA00CCA840 /* iFudge.app */;
-			productType = "com.apple.product-type.application";
-		};
-		9674A793166E73AA00CCA840 /* iFudgeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9674A7A9166E73AA00CCA840 /* Build configuration list for PBXNativeTarget "iFudgeTests" */;
-			buildPhases = (
-				9674A78F166E73AA00CCA840 /* Sources */,
-				9674A790166E73AA00CCA840 /* Frameworks */,
-				9674A791166E73AA00CCA840 /* Resources */,
-				9674A792166E73AA00CCA840 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9674A79A166E73AA00CCA840 /* PBXTargetDependency */,
-			);
-			name = iFudgeTests;
-			productName = iFudgeTests;
-			productReference = 9674A794166E73AA00CCA840 /* iFudgeTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		9674A764166E73AA00CCA840 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = iFudge;
-				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "James Smith";
-			};
-			buildConfigurationList = 9674A767166E73AA00CCA840 /* Build configuration list for PBXProject "iFudge" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 9674A762166E73AA00CCA840;
-			productRefGroup = 9674A76E166E73AA00CCA840 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				9674A76C166E73AA00CCA840 /* iFudge */,
-				9674A793166E73AA00CCA840 /* iFudgeTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		9674A76B166E73AA00CCA840 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9674A77C166E73AA00CCA840 /* InfoPlist.strings in Resources */,
-				9674A784166E73AA00CCA840 /* Default.png in Resources */,
-				9674A786166E73AA00CCA840 /* Default@2x.png in Resources */,
-				9674A788166E73AA00CCA840 /* Default-568h@2x.png in Resources */,
-				9674A78E166E73AA00CCA840 /* iFudgeViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9674A791166E73AA00CCA840 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9674A7A0166E73AA00CCA840 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9674A792166E73AA00CCA840 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		9674A769166E73AA00CCA840 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9674A77E166E73AA00CCA840 /* main.m in Sources */,
-				9674A782166E73AA00CCA840 /* iFudgeAppDelegate.m in Sources */,
-				9674A78B166E73AA00CCA840 /* iFudgeViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9674A78F166E73AA00CCA840 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9674A7A3166E73AA00CCA840 /* iFudgeTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9674A79A166E73AA00CCA840 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9674A76C166E73AA00CCA840 /* iFudge */;
-			targetProxy = 9674A799166E73AA00CCA840 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		9674A77A166E73AA00CCA840 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9674A77B166E73AA00CCA840 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9674A78C166E73AA00CCA840 /* iFudgeViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9674A78D166E73AA00CCA840 /* en */,
-			);
-			name = iFudgeViewController.xib;
-			sourceTree = "<group>";
-		};
-		9674A79E166E73AA00CCA840 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9674A79F166E73AA00CCA840 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		9674A7A4166E73AA00CCA840 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		9674A7A5166E73AA00CCA840 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9674A7A7166E73AA00CCA840 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iFudge/iFudge-Prefix.pch";
-				INFOPLIST_FILE = "iFudge/iFudge-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		9674A7A8166E73AA00CCA840 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iFudge/iFudge-Prefix.pch";
-				INFOPLIST_FILE = "iFudge/iFudge-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		9674A7AA166E73AA00CCA840 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iFudge.app/iFudge";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iFudge/iFudge-Prefix.pch";
-				INFOPLIST_FILE = "iFudgeTests/iFudgeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		9674A7AB166E73AA00CCA840 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iFudge.app/iFudge";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iFudge/iFudge-Prefix.pch";
-				INFOPLIST_FILE = "iFudgeTests/iFudgeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		9674A767166E73AA00CCA840 /* Build configuration list for PBXProject "iFudge" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9674A7A4166E73AA00CCA840 /* Debug */,
-				9674A7A5166E73AA00CCA840 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9674A7A6166E73AA00CCA840 /* Build configuration list for PBXNativeTarget "iFudge" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9674A7A7166E73AA00CCA840 /* Debug */,
-				9674A7A8166E73AA00CCA840 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		9674A7A9166E73AA00CCA840 /* Build configuration list for PBXNativeTarget "iFudgeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9674A7AA166E73AA00CCA840 /* Debug */,
-				9674A7AB166E73AA00CCA840 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 9674A764166E73AA00CCA840 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>03963566F4414909A6C567E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A6A5C93B4C824417AC7001C6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>8536DAEAB8C146EB914F26B7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>9674A762166E73AA00CCA840</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9674A777166E73AA00CCA840</string>
+				<string>9674A79B166E73AA00CCA840</string>
+				<string>9674A770166E73AA00CCA840</string>
+				<string>9674A76E166E73AA00CCA840</string>
+				<string>9F938856DC0C4D05AEC52E13</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A764166E73AA00CCA840</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>iFudge</string>
+				<key>LastUpgradeCheck</key>
+				<string>0450</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>James Smith</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>9674A767166E73AA00CCA840</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>9674A762166E73AA00CCA840</string>
+			<key>productRefGroup</key>
+			<string>9674A76E166E73AA00CCA840</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>9674A76C166E73AA00CCA840</string>
+				<string>9674A793166E73AA00CCA840</string>
+			</array>
+		</dict>
+		<key>9674A767166E73AA00CCA840</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9674A7A4166E73AA00CCA840</string>
+				<string>9674A7A5166E73AA00CCA840</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9674A769166E73AA00CCA840</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9674A77E166E73AA00CCA840</string>
+				<string>9674A782166E73AA00CCA840</string>
+				<string>9674A78B166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9674A76A166E73AA00CCA840</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9674A772166E73AA00CCA840</string>
+				<string>9674A774166E73AA00CCA840</string>
+				<string>9674A776166E73AA00CCA840</string>
+				<string>03963566F4414909A6C567E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9674A76B166E73AA00CCA840</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9674A77C166E73AA00CCA840</string>
+				<string>9674A784166E73AA00CCA840</string>
+				<string>9674A786166E73AA00CCA840</string>
+				<string>9674A788166E73AA00CCA840</string>
+				<string>9674A78E166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9674A76C166E73AA00CCA840</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9674A7A6166E73AA00CCA840</string>
+			<key>buildPhases</key>
+			<array>
+				<string>9674A769166E73AA00CCA840</string>
+				<string>9674A76A166E73AA00CCA840</string>
+				<string>9674A76B166E73AA00CCA840</string>
+				<string>8536DAEAB8C146EB914F26B7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>iFudge</string>
+			<key>productName</key>
+			<string>iFudge</string>
+			<key>productReference</key>
+			<string>9674A76D166E73AA00CCA840</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>9674A76D166E73AA00CCA840</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>iFudge.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9674A76E166E73AA00CCA840</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9674A76D166E73AA00CCA840</string>
+				<string>9674A794166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A770166E73AA00CCA840</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9674A771166E73AA00CCA840</string>
+				<string>9674A773166E73AA00CCA840</string>
+				<string>9674A775166E73AA00CCA840</string>
+				<string>9674A795166E73AA00CCA840</string>
+				<string>A6A5C93B4C824417AC7001C6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A771166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9674A772166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A771166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A773166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9674A774166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A773166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A775166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>9674A776166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A775166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A777166E73AA00CCA840</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9674A780166E73AA00CCA840</string>
+				<string>9674A781166E73AA00CCA840</string>
+				<string>9674A789166E73AA00CCA840</string>
+				<string>9674A78A166E73AA00CCA840</string>
+				<string>9674A78C166E73AA00CCA840</string>
+				<string>9674A778166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>iFudge</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A778166E73AA00CCA840</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9674A779166E73AA00CCA840</string>
+				<string>9674A77A166E73AA00CCA840</string>
+				<string>9674A77D166E73AA00CCA840</string>
+				<string>9674A77F166E73AA00CCA840</string>
+				<string>9674A783166E73AA00CCA840</string>
+				<string>9674A785166E73AA00CCA840</string>
+				<string>9674A787166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A779166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>iFudge-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A77A166E73AA00CCA840</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9674A77B166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A77B166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A77C166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A77A166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A77D166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A77E166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A77D166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A77F166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>iFudge-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A780166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>iFudgeAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A781166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>iFudgeAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A782166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A781166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A783166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A784166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A783166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A785166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A786166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A785166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A787166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A788166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A787166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A789166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>iFudgeViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A78A166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>iFudgeViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A78B166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A78A166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A78C166E73AA00CCA840</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9674A78D166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>iFudgeViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A78D166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/iFudgeViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A78E166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A78C166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A78F166E73AA00CCA840</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9674A7A3166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9674A790166E73AA00CCA840</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9674A796166E73AA00CCA840</string>
+				<string>9674A797166E73AA00CCA840</string>
+				<string>9674A798166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9674A791166E73AA00CCA840</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9674A7A0166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>9674A792166E73AA00CCA840</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string># Run the unit tests in this test bundle.
+"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
+</string>
+		</dict>
+		<key>9674A793166E73AA00CCA840</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9674A7A9166E73AA00CCA840</string>
+			<key>buildPhases</key>
+			<array>
+				<string>9674A78F166E73AA00CCA840</string>
+				<string>9674A790166E73AA00CCA840</string>
+				<string>9674A791166E73AA00CCA840</string>
+				<string>9674A792166E73AA00CCA840</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>9674A79A166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>iFudgeTests</string>
+			<key>productName</key>
+			<string>iFudgeTests</string>
+			<key>productReference</key>
+			<string>9674A794166E73AA00CCA840</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>9674A794166E73AA00CCA840</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>iFudgeTests.octest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9674A795166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SenTestingKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/SenTestingKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>9674A796166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A795166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A797166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A771166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A798166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A773166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A799166E73AA00CCA840</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>9674A764166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>9674A76C166E73AA00CCA840</string>
+			<key>remoteInfo</key>
+			<string>iFudge</string>
+		</dict>
+		<key>9674A79A166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>9674A76C166E73AA00CCA840</string>
+			<key>targetProxy</key>
+			<string>9674A799166E73AA00CCA840</string>
+		</dict>
+		<key>9674A79B166E73AA00CCA840</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9674A7A1166E73AA00CCA840</string>
+				<string>9674A7A2166E73AA00CCA840</string>
+				<string>9674A79C166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>iFudgeTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A79C166E73AA00CCA840</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9674A79D166E73AA00CCA840</string>
+				<string>9674A79E166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A79D166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>iFudgeTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A79E166E73AA00CCA840</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9674A79F166E73AA00CCA840</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A79F166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A7A0166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A79E166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A7A1166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>iFudgeTests.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A7A2166E73AA00CCA840</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>iFudgeTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9674A7A3166E73AA00CCA840</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9674A7A2166E73AA00CCA840</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9674A7A4166E73AA00CCA840</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9674A7A5166E73AA00CCA840</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9674A7A6166E73AA00CCA840</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9674A7A7166E73AA00CCA840</string>
+				<string>9674A7A8166E73AA00CCA840</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9674A7A7166E73AA00CCA840</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9F938856DC0C4D05AEC52E13</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>iFudge/iFudge-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>iFudge/iFudge-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9674A7A8166E73AA00CCA840</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9F938856DC0C4D05AEC52E13</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>iFudge/iFudge-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>iFudge/iFudge-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9674A7A9166E73AA00CCA840</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9674A7AA166E73AA00CCA840</string>
+				<string>9674A7AB166E73AA00CCA840</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9674A7AA166E73AA00CCA840</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/iFudge.app/iFudge</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
+					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>iFudge/iFudge-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>iFudgeTests/iFudgeTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>9674A7AB166E73AA00CCA840</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/iFudge.app/iFudge</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
+					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>iFudge/iFudge-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>iFudgeTests/iFudgeTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>9F938856DC0C4D05AEC52E13</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>A6A5C93B4C824417AC7001C6</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods.a</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>9674A764166E73AA00CCA840</string>
+</dict>
+</plist>

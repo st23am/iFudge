@@ -7,23 +7,28 @@
 //
 
 #import "iFudgeViewController.h"
+#include <stdlib.h>
 
 @interface iFudgeViewController ()
 
 @end
 
 @implementation iFudgeViewController
-
-- (void)viewDidLoad
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+    
+    
+    }
+    // return the address of the new object
+    return self;
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)showDiceRoll:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    int dieResult = arc4random() % 6;
+    NSString *result = [NSString stringWithFormat:@"Your result was %d", dieResult];
+    [rollResult setText: result];
 }
-
 @end
